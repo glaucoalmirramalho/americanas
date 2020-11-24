@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ATF</name>
+    </assembly>
+    <members>
+        <member name="M:ATF.Drivers.WebDriverInstance.WaitElementToLoad(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.TimeSpan)">
+            <summary>Espera o elemento carregar. Use apenas se tiver certeza que o elemento deverá aparecer.</summary>
+            <param name="locator">The locator.</param>
+            <param name="timeSpan">The time span.</param>
+            <returns>Retorna o elemento esperado.</returns>
+        </member>
+        <member name="M:ATF.Drivers.WebDriverInstance.TryFindElement(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.TimeSpan)">
+            <summary>Tenta esperar o elemento carregar.</summary>
+            <param name="locator">The locator.</param>
+            <param name="timeSpan">The time span.</param>
+            <returns>Retorna o elemento esperado, null se nenhum for encontrado.</returns>
+        </member>
+        <member name="M:ATF.Drivers.WebDriverInstance.WaitElementsToLoad(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.TimeSpan)">
+            <summary>Espera os elemento carregarem. Use apenas se tiver certeza que o elemento deverá aparecer.</summary>
+            <param name="locator">The locator.</param>
+            <param name="timeSpan">The time span.</param>
+            <returns>Retorna o elemento esperado.</returns>
+        </member>
+        <member name="M:ATF.Steps.DefaultStepsDefs.RedirectedTo(System.String)">
+            <summary>
+            Verifica se foi redirecionado para a página certa.
+            </summary>
+            <param name="pagename">Nome como a Página é conhecida.</param>
+            <returns>Se a Página desejada é igual à Página atual.</returns>
+        </member>
+        <member name="M:ATF.Steps.DefaultStepsDefs.NavigateTo(System.String)">
+            <summary>
+            Navega para a página desejada.
+            </summary>
+            <param name="pagename">Nome como a Página é conhecida</param>
+        </member>
+        <member name="T:ATF.Web.Elements.Containers.IModals">
+            <summary>
+            Interface usada para janelas modal.
+            </summary>
+        </member>
+        <member name="P:ATF.Web.Elements.Containers.IModals.Title">
+            <summary>
+            Título da Janela
+            </summary>
+        </member>
+        <member name="M:ATF.Web.Elements.Containers.IModals.Close">
+            <summary>
+            Fecha a Janela
+            </summary>
+        </member>
+        <member name="P:ATF.Web.Elements.Containers.IModals.Value">
+            <summary>
+            Objeto referente às informações mostradas.
+            </summary>
+        </member>
+        <member name="T:ATF.Web.Elements.IBinaryElement">
+            <summary>
+            Webelement representando elementos binários: checkboxes, radio button, toggles, etc.
+            </summary>
+        </member>
+        <member name="T:ATF.Web.Elements.ICheckboxElement">
+            <summary>
+            Webelement representando Checkboxes na Página.
+            </summary>
+        </member>
+        <member name="T:ATF.Web.Elements.IKWebElement">
+            <summary>
+            Elemento Web básico da Framework.
+            </summary>
+        </member>
+        <member name="P:ATF.Web.Elements.IKWebElement.Name">
+            <summary>
+            Nome do Elemento.
+            </summary>
+        </member>
+        <member name="T:ATF.Web.Elements.ITextElement">
+            <summary>
+            Webelement que apresenta um texto, sem input. Ex.: labels.
+            </summary>
+        </member>
+        <member name="P:ATF.Web.Elements.ITextElement.Value">
+            <summary>
+            Valor do campo.
+            </summary>
+        </member>
+        <member name="T:ATF.Web.Elements.KWebElement">
+            <summary>
+            Classe abstrata básica de um Web Element personalizado.
+            </summary>
+        </member>
+        <member name="P:ATF.Web.Elements.KWebElement.Name">
+            <summary>
+            Nome do Elemento para BDD.
+            </summary>
+        </member>
+        <member name="M:ATF.Web.Elements.KWebElement.SaveArtifacts(System.String)">
+            <summary>
+            Loga o evento, salva o screenshot no último diretório criado pela Sessão de Teste no Before Step
+            e faz a decoração e legenda na imagem, com um quadro ao redor do elemento interagido, uma flecha e um texto 
+            abaixo da captura.
+            </summary>
+            <param name="message">O texto que será escrito no log e na imagem.</param>
+        </member>
+        <member name="M:ATF.Web.Elements.KWebElement.SplitMessage(System.String,System.Int32,System.Drawing.SizeF)">
+            <summary>
+            Caso a mensagem a ser desenhada seja grande demais, faz um processo de quebra de linha e envia de volta
+            cada a linha.
+            </summary>
+            <param name="message">Mensagem a ser quebrada.</param>
+            <param name="imageWidth">Largura da imagem ao qual a mensagem vai ser desenhada.</param>
+            <param name="measuredString">Medida da mensagem na imagem.</param>
+            <returns>Uma lista com a mensagem separada em linhas de quebra de mensagem.</returns>
+        </member>
+        <member name="M:ATF.Web.Pages.IPageObject.Open">
+            <summary>
+            Abre a Página.
+            </summary>
+        </member>
+        <member name="P:ATF.Web.Pages.IPageObject.Value">
+            <summary>
+            Insere um objeto do modelo na Página.
+            </summary>
+        </member>
+        <member name="T:ATF.Web.Pages.PageObjectRegister">
+            <summary>
+            Classe de mapeamento Nome como é conhecida com o nome que é mostrada na tela.
+            </summary>
+        </member>
+        <member name="P:ATF.Web.Pages.PageObjectRegister.Name">
+            <summary>
+            Nome da página como é conhecida.
+            </summary>
+        </member>
+        <member name="P:ATF.Web.Pages.PageObjectRegister.Displayname">
+            <summary>
+            Nome como é mostrado no identificador de nome da página.
+            </summary>
+        </member>
+        <member name="M:ATF.Web.Pages.PageObjectRegister.#ctor(System.String,System.String)">
+            <summary>
+            Constrói nova instância com nome conhecido da página e nome como é mostrada na tela.
+            </summary>
+            <param name="name">Nome como a página é conhecida.</param>
+            <param name="displayname">Nome como a página é mostrada na tela.</param>
+        </member>
+        <member name="M:ATF.Web.Pages.PageObjectRegister.#ctor(System.String)">
+            <summary>
+            Constrói nova instância com nome conhecido da página e nome como é mostrada na tela iguais.
+            </summary>
+            <param name="name">Nome da página</param>
+        </member>
+    </members>
+</doc>
