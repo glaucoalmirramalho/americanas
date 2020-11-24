@@ -1,0 +1,19 @@
+﻿{
+  "bindingCulture": {
+    "language": "pt-br"
+  },
+  "language": {
+    "feature": "pt"
+  },
+  "stepAssemblies": [
+    {
+      "assembly": "ATF"
+    }
+  ],
+  "AppSettings": {
+    "SUT": "Lojas Americanas",
+    "SUT_URL": "https://www.americanas.com.br/",
+    "BROWSER": "Chrome",
+    "ClientSettingsProvider.ServiceUri": "https://www.americanas.com.br/"    
+  }
+}
